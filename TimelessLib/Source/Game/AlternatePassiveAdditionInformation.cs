@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using TimelessEmulator.Data.Models;
+using TimelessLib.Data.Models;
 
-namespace TimelessEmulator.Game;
+namespace TimelessLib.Game;
 
 public class AlternatePassiveAdditionInformation
 {

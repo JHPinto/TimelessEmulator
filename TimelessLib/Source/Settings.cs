@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 
-namespace TimelessEmulator;
+namespace TimelessLib;
 
 public static  class Settings
 {

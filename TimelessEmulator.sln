@@ -3,18 +3,44 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32526.322
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimelessEmulator", "TimelessEmulator\TimelessEmulator.csproj", "{7A2085C2-6374-4B0C-A49C-82EA18D2E0BE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TimelessEmulator", "TimelessEmulator\TimelessEmulator.csproj", "{7A2085C2-6374-4B0C-A49C-82EA18D2E0BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimelessEmulatorGUI", "TimelessEmulatorGUI\TimelessEmulatorGUI.csproj", "{0221E3DB-5243-4FCB-9CAD-25290F0F3416}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimelessLib", "TimelessLib\TimelessLib.csproj", "{1A58D340-BA29-48EA-B150-1C7624D9B929}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
 		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7A2085C2-6374-4B0C-A49C-82EA18D2E0BE}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{7A2085C2-6374-4B0C-A49C-82EA18D2E0BE}.Debug|Any CPU.Build.0 = Debug|x64
 		{7A2085C2-6374-4B0C-A49C-82EA18D2E0BE}.Debug|x64.ActiveCfg = Debug|x64
 		{7A2085C2-6374-4B0C-A49C-82EA18D2E0BE}.Debug|x64.Build.0 = Debug|x64
+		{7A2085C2-6374-4B0C-A49C-82EA18D2E0BE}.Release|Any CPU.ActiveCfg = Release|x64
+		{7A2085C2-6374-4B0C-A49C-82EA18D2E0BE}.Release|Any CPU.Build.0 = Release|x64
 		{7A2085C2-6374-4B0C-A49C-82EA18D2E0BE}.Release|x64.ActiveCfg = Release|x64
 		{7A2085C2-6374-4B0C-A49C-82EA18D2E0BE}.Release|x64.Build.0 = Release|x64
+		{0221E3DB-5243-4FCB-9CAD-25290F0F3416}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0221E3DB-5243-4FCB-9CAD-25290F0F3416}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0221E3DB-5243-4FCB-9CAD-25290F0F3416}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{0221E3DB-5243-4FCB-9CAD-25290F0F3416}.Debug|x64.Build.0 = Debug|Any CPU
+		{0221E3DB-5243-4FCB-9CAD-25290F0F3416}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0221E3DB-5243-4FCB-9CAD-25290F0F3416}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0221E3DB-5243-4FCB-9CAD-25290F0F3416}.Release|x64.ActiveCfg = Release|Any CPU
+		{0221E3DB-5243-4FCB-9CAD-25290F0F3416}.Release|x64.Build.0 = Release|Any CPU
+		{1A58D340-BA29-48EA-B150-1C7624D9B929}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A58D340-BA29-48EA-B150-1C7624D9B929}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A58D340-BA29-48EA-B150-1C7624D9B929}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{1A58D340-BA29-48EA-B150-1C7624D9B929}.Debug|x64.Build.0 = Debug|Any CPU
+		{1A58D340-BA29-48EA-B150-1C7624D9B929}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A58D340-BA29-48EA-B150-1C7624D9B929}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A58D340-BA29-48EA-B150-1C7624D9B929}.Release|x64.ActiveCfg = Release|Any CPU
+		{1A58D340-BA29-48EA-B150-1C7624D9B929}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

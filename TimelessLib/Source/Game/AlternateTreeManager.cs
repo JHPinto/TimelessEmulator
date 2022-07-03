@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using TimelessEmulator.Data;
-using TimelessEmulator.Data.Models;
-using TimelessEmulator.Random;
+using TimelessLib.Data;
+using TimelessLib.Data.Models;
+using TimelessLib.Random;
 
-namespace TimelessEmulator.Game;
+namespace TimelessLib.Game;
 
 public class AlternateTreeManager
 {

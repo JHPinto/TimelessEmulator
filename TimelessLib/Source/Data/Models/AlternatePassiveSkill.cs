@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Text.Json.Serialization;
 
-namespace TimelessEmulator.Data.Models;
+namespace TimelessLib.Data.Models;
 
-public class AlternatePassiveAddition
+public class AlternatePassiveSkill
 {
 
     [JsonPropertyName("_rid")]
@@ -11,6 +11,9 @@ public class AlternatePassiveAddition
 
     [JsonPropertyName("Id")]
     public string Identifier { get; init; }
+
+    [JsonPropertyName("Name")]
+    public string Name { get; init; }
 
     [JsonPropertyName("AlternateTreeVersionsKey")]
     public uint AlternateTreeVersionIndex { get; init; }
@@ -24,11 +27,23 @@ public class AlternatePassiveAddition
     [JsonPropertyName("Stat1Max")]
     public uint StatAMaximumValue { get; init; }
 
-    [JsonPropertyName("Unknown7")]
+    [JsonPropertyName("Stat2Min")]
     public uint StatBMinimumValue { get; init; }
 
-    [JsonPropertyName("Unknown8")]
+    [JsonPropertyName("Stat2Max")]
     public uint StatBMaximumValue { get; init; }
+
+    [JsonPropertyName("Unknown10")]
+    public uint StatCMinimumValue { get; init; }
+
+    [JsonPropertyName("Unknown11")]
+    public uint StatCMaximumValue { get; init; }
+
+    [JsonPropertyName("Unknown12")]
+    public uint StatDMinimumValue { get; init; }
+
+    [JsonPropertyName("Unknown13")]
+    public uint StatDMaximumValue { get; init; }
 
     [JsonPropertyName("PassiveType")]
     public IReadOnlyCollection<uint> ApplicablePassiveTypes { get; init; }
@@ -36,18 +51,39 @@ public class AlternatePassiveAddition
     [JsonPropertyName("SpawnWeight")]
     public uint SpawnWeight { get; init; }
 
-    public AlternatePassiveAddition()
+    [JsonPropertyName("RandomMin")]
+    public uint MinimumAdditions { get; init; }
+
+    [JsonPropertyName("RandomMax")]
+    public uint MaximumAdditions { get; init; }
+
+    [JsonPropertyName("Unknown19")]
+    public uint ConquerorIndex { get; init; }
+
+    [JsonPropertyName("Unknown25")]
+    public uint ConquerorVersion { get; init; }
+
+    public AlternatePassiveSkill()
     {
         this.Index = default;
         this.Identifier = default;
+        this.Name = default;
         this.AlternateTreeVersionIndex = default;
         this.StatIndices = default;
         this.StatAMinimumValue = default;
         this.StatAMaximumValue = default;
         this.StatBMinimumValue = default;
         this.StatBMaximumValue = default;
+        this.StatCMinimumValue = default;
+        this.StatCMaximumValue = default;
+        this.StatDMinimumValue = default;
+        this.StatDMaximumValue = default;
         this.ApplicablePassiveTypes = default;
         this.SpawnWeight = default;
+        this.MinimumAdditions = default;
+        this.MaximumAdditions = default;
+        this.ConquerorIndex = default;
+        this.ConquerorVersion = default;
     }
 
 }

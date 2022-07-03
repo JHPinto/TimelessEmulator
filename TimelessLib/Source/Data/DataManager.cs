@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text.Json;
-using TimelessEmulator.Data.Models;
-using TimelessEmulator.Game;
+using TimelessLib.Data.Models;
+using TimelessLib.Game;
 
-namespace TimelessEmulator.Data;
+namespace TimelessLib.Data;
 
 public static class DataManager
 {

@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Linq;
-using TimelessEmulator.Data.Models;
-using TimelessEmulator.Game;
+using TimelessLib.Data.Models;
+using TimelessLib.Game;
 
-namespace TimelessEmulator.Random;
+namespace TimelessLib.Random;
 
 public class RandomNumberGenerator
 {

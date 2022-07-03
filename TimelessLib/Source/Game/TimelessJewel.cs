@@ -1,7 +1,7 @@
 ﻿using System;
-using TimelessEmulator.Data.Models;
+using TimelessLib.Data.Models;
 
-namespace TimelessEmulator.Game;
+namespace TimelessLib.Game;
 
 public class TimelessJewel
 {

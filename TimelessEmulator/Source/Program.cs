@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using Spectre.Console;
-using TimelessEmulator.Data;
-using TimelessEmulator.Data.Models;
-using TimelessEmulator.Game;
+using TimelessLib;
+using TimelessLib.Data;
+using TimelessLib.Data.Models;
+using TimelessLib.Game;
 
 namespace TimelessEmulator;
 

@@ -1,4 +1,4 @@
-﻿namespace TimelessEmulator.Game;
+﻿namespace TimelessLib.Game;
 
 public class TimelessJewelConqueror
 {

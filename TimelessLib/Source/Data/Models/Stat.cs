@@ -1,6 +1,6 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace TimelessEmulator.Data.Models;
+namespace TimelessLib.Data.Models;
 
 public class Stat
 {
