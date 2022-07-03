@@ -97,6 +97,7 @@ namespace TimelessEmulatorGUI
             {
                 keystoneTypeSelection.Enabled = false;
                 desiredStatCombo.Enabled = false;
+                return;
             }
             keystoneTypeSelection.Enabled = true;
             keystoneTypeSelection.Text = "";
@@ -114,6 +115,7 @@ namespace TimelessEmulatorGUI
             if (senderComboBox.SelectedItem == null)
             {
                 desiredStatCombo.Enabled = false;
+                return;
             }
             desiredStatCombo.Enabled = true;
             timelessJewelConqueror = timelessJewelConquerors[alternateTreeVersionIndex][senderComboBox.SelectedItem.ToString()];
