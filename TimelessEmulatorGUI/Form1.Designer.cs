@@ -87,7 +87,6 @@
             this.selectedSkills.Location = new System.Drawing.Point(13, 154);
             this.selectedSkills.Name = "selectedSkills";
             this.selectedSkills.Size = new System.Drawing.Size(185, 274);
-            this.selectedSkills.Sorted = true;
             this.selectedSkills.TabIndex = 4;
             this.selectedSkills.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.selectedSkills_ItemCheck);
             // 

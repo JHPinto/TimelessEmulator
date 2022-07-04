@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using TimelessLib.Data;
 using TimelessLib.Data.Models;
 using TimelessLib.Game;
@@ -126,9 +127,8 @@ namespace TimelessEmulatorGUI
 
         private void skillFilter_TextChanged(object sender, EventArgs e)
         {
-            TextBox textFilterBox = (TextBox)sender;
             this.selectedSkills.Items.Clear();
-            List<object> list = new List<object>();
+            TextBox textFilterBox = (TextBox)sender;
             foreach (PassiveSkill skill in DataManager.PassiveSkills)
             {
                 if (skill.IsNotable && skill.Name.ToLower().Contains(textFilterBox.Text))
@@ -139,12 +139,24 @@ namespace TimelessEmulatorGUI
         private void selectedSkills_ItemCheck(object sender, ItemCheckEventArgs e)
         {
             if (e.NewValue == CheckState.Unchecked)
+            {
                 selectedPassiveSkills.Remove(DataManager.PassiveSkills.First(p => p.Name == selectedSkills.Items[e.Index].ToString()));
+            }
             else
+            {
                 selectedPassiveSkills.Add(DataManager.PassiveSkills.First(p => p.Name == selectedSkills.Items[e.Index].ToString()));
-            
+            }
+            this.BeginInvoke(new Action(() =>
+            {
+                this.selectedSkills.ItemCheck -= selectedSkills_ItemCheck;
+                this.selectedSkills.Items.Insert(0, this.selectedSkills.Items[e.Index]);
+                this.selectedSkills.Items.RemoveAt(e.Index + 1);
+                this.selectedSkills.SetItemCheckState(0, e.NewValue);
+                this.selectedSkills.ItemCheck += selectedSkills_ItemCheck;
+            }));
             DisplayWarningText();
         }
+
 
         private void button1_Click(object sender, EventArgs e)
         {
